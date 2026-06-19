@@ -66,6 +66,7 @@ body {
   top: 0;
   left: 0;
   z-index: 0;
+  display: none;
 }
 
 /* Content */
@@ -435,6 +436,8 @@ button:active { transform: translateY(0); }
 
 /* Print - optimized single page */
 @media print {
+  .bg { display: block !important; }
+
   .controls { display: none !important; }
   body { background: white !important; padding: 0 !important; }
 
@@ -504,7 +507,7 @@ button:active { transform: translateY(0); }
     color: inherit !important;
   }
 
-  .bg { opacity: 1 !important; }
+.bg { opacity: 1 !important; }
 
   * {
     color-adjust: exact !important;
